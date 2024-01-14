@@ -1,24 +1,6 @@
-import React from 'react'
+import React from "react"
 
-const Education = () => {
-  const educationData =[
-    {
-        title: 'MBA in Finance',
-        tenure: '1993 to 1995',
-        details: 'MBA at the Philippines Christian University, led impactful projects, including a PVC cable industry feasibility study and strategic planning for a marriage hall.'
-    },
-    {
-        title: 'B.Sc in Mathematics and Physics',
-        tenure: '1987 to 1989',
-        details: 'Edwards College - Peshawar, PK'
-    },
-    {
-        title: 'SSC in General Sciences',
-        tenure: '1985 to 1987',
-        details: 'Peshawar Public School & College - Peshawar, PK'
-    }
-  ]
-  const experience = [
+export const experienceData = [
     {
         company : ' PIAIC -Certified AI, Metaverse, and Web 3.0 Developer & Solopreneur | Student',
         duration : 'Jul 2023 - Present',
@@ -51,70 +33,10 @@ const Education = () => {
     },
   
     ]
-    const additionalSkill = [
+    export const additionalSkill = [
         {
             company : 'Mathematics Tutor (Part-time)',
             duration : 'Since 2013 to present',
             details : 'Utilized teaching skills to educate and mentor students in mathematics for the past 10 years.'
         }
     ]
-    return (
-    <main className='bg-teal-50 font-medium min-h-screen text-teal-950'>
-
-        <div>
-            <h1 className='border-b border-teal-200 h-16 pt-3 ps-9 text-3xl font-bold'>Resume</h1>
-        </div>
-        <div className='border-b border-teal-200 mx-5'>
-        {
-            educationData.map((e, index) => 
-            <div className=' grid grid-cols-3 gap-4 p-5'>
-                <div className='text-2xl'>
-                    {
-                        index === 0 ? <p>Education</p> : ''
-                    }
-                </div>
-                <div className='mt-2'>{e.tenure}</div>
-                <div className=''>
-                    <h1 className='mb-2'>{e.title}</h1>
-                    <p className=''>{e.details}</p>
-                </div>
-
-            </div>)
-        }
-        </div>
-        <div className='border-b border-teal-200 mx-5'>
-        {
-            experience.map((ex, index) =>
-            <div className='grid grid-cols-3 gap-4 p-5'>
-                <div className='text-2xl'>
-                    {index === 0 ? <p>Experience</p> : ''}
-                </div>
-                <div className=''>{ex.duration}</div>
-                <div>
-                    <h1 className='mb-2'>{ex.company}</h1>
-                    <p>{ex.details}</p>
-                </div>
-                
-            </div>)
-        }
-        </div>
-        <div className='border-b border-teal-200 mx-5'>
-        {
-            additionalSkill.map((skill) => 
-            <div className='grid grid-cols-3 gap-4 p-5'>
-                <div className='text-2xl'>Additional Skills</div>
-                <div>{skill.duration}</div>
-                <div>
-                    <h1 className='mb-2'>{skill.company}</h1>
-                    <p>{skill.details}</p>
-                </div>
-
-            </div>
-            )
-        }    
-        </div>
-    </main>
-  )
-}
-
-export default Education

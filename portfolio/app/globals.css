@@ -2,9 +2,44 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@layer base {
+  .heading-1{
+    @apply
+    border-b border-teal-200 
+    font-bold
+    h-16 pt-3 ps-9 
+    text-3xl 
+  }
+  .subheadings{
+    @apply
+    font-bold
+    mb-2
+    text-2xl
+  }
+  .heading-2 {
+    @apply
+    duration-300 
+    hover:scale-105 hover:text-teal-700 hover:shadow-md
+    mt-5 my-2 mx-10
+    ps-9 pe-16  py-2 
+    rounded-md  
+    transition transform 
+    text-center text-xl text-teal-600 font-extrabold;
+  }
+  .buttons{
+    @apply
+    bg-teal-950
+    duration-300
+    flex justify-center
+    hover:shadow-gray-400 hover:scale-x-100 hover:text-teal-950 
+    hover:bg-teal-400 hover:shadow-md 
+    m-2 p-3
+    rounded-md 
+    shadow-gray-400 shadow-md 
+    transition transform 
+    text-teal-400
+
+  }
+  
 }
 

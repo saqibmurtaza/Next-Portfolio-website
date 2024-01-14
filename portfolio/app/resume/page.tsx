@@ -1,10 +1,10 @@
 import React from 'react'
-import Education from '../component/Education';
+import MyResume from '../component/MyResume';
 
 export const Resume = () => {
   return (
     <main>
-        <Education/>p
+        <MyResume/>
     </main>
   );
 }
