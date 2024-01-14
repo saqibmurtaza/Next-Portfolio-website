@@ -31,7 +31,7 @@ const Blog = () => {
       </div>
       <div className='mt-5 pe-9 ps-9'>
         <h2 className='heading-2'>Blog Categories</h2>
-        <div className='categories grid grid-cols-2'>
+        <div className='categories grid grid-cols-2 text-center md:grid-cols-3 lg:grid-cols-4'>
           
           <Link className='buttons' 
             href={'#'} id='1' 
@@ -57,7 +57,7 @@ const Blog = () => {
             href={'#'} id='6' 
             onClick={() => ScrollToSection('business')}>Business and Online Income
           </Link>
-          <Link className='buttons' 
+          <Link className='buttons md:col-span-2 lg:col-span-1' 
             href={'#'} id='7' 
             onClick={() => ScrollToSection('marketing')}>Digital Marketing and Email
           </Link>
