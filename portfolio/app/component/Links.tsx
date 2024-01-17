@@ -8,35 +8,35 @@ const Links = () => {
         <div className='categories grid grid-cols-2 text-center md:grid-cols-3 lg:grid-cols-4'>
           
           <Link className='buttons' 
-            href={'#'} id='1' 
+            href={'#'} id='career' 
             onClick={() => ScrollToSection('career')}>Career and Job Seeking
           </Link>
           <Link className='buttons ' 
-            href={'#'} id='2' 
+            href={'#'} id='health&' 
             onClick={() => ScrollToSection('health&')}>Health and Fitness
           </Link>
           <Link className='buttons'
-            href={'#'} id='3'
+            href={'#'} id='social'
             onClick={() => ScrollToSection('social')}>Social Media and Online Presence
           </Link>
           <Link className='buttons ' 
-            href={'#'} id='4' 
+            href={'#'} id='technology' 
             onClick={() => ScrollToSection('technology')}>Technology and Web Hosting
           </Link>
           <Link className='buttons' 
-            href={'#'} id='5' 
+            href={'#'} id='home' 
             onClick={() => ScrollToSection('home')}>Home and Interior Design
           </Link>
           <Link className='buttons ' 
-            href={'#'} id='6' 
+            href={'#'} id='business' 
             onClick={() => ScrollToSection('business')}>Business and Online Income
           </Link>
           <Link className='buttons md:col-span-2 lg:col-span-1' 
-            href={'#'} id='7' 
+            href={'#'} id='marketing' 
             onClick={() => ScrollToSection('marketing')}>Digital Marketing and Email
           </Link>
           <Link className='buttons' 
-            href={'#'} id='8' 
+            href={'#'} id='freelancing' 
             onClick={() => ScrollToSection('freelancing')}>Freelancing and Working from Home
           </Link>
         </div>

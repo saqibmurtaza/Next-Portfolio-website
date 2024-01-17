@@ -13,7 +13,7 @@ const Navbar = () => {
         <div className='text-sm md:text-base'>
             <ul className="flex font-semibold space-x-3">
                 <Link href={'/'}>Home</Link>
-                <Link href={'/blog'}>Blog</Link>
+                <Link href={'/myblog'}>Blog</Link>
                 <Link href={'/resume'}>Resume</Link>
                 <Link href={'/portfolio'}>Portfolio</Link>
             </ul>

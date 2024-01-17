@@ -2,9 +2,9 @@ import WelcomePage from './component/Welcomepage'
 
 export default function Home() {
   return (
-    <section>
+    <div>
       <WelcomePage/>
-    </section>
+    </div>
    
   )
 }

@@ -4,7 +4,7 @@ import MyResume from '../component/MyResume';
 export const Resume = () => {
   return (
     <main>
-        <MyResume/>
+      <MyResume/>
     </main>
   );
 }
