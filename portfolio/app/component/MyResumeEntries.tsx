@@ -1,10 +1,10 @@
 import React from 'react'
 import { resumeDataType } from '../lib/ExperienceData'
 
-export interface myResumeProp {
+interface myResumeProp {
     data : resumeDataType[]
 }
-const MyResumeEntries: React.FC<myResumeProp> = ({data}) => {
+const MyResumeEntries = ({data} : myResumeProp) => {
   return (
     <main>
        {

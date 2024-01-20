@@ -1,12 +1,9 @@
 'use client'
 
-import Link from 'next/link';
 import React from 'react'
-import ScrollToSection from './ScrollToSection';
 import { career, emailMarketing, freelancing, health, interior, 
           online, socialMedia, technology } from '../lib/BlogData';
 import BlogsEntries from './BlogsEntries';
-import Links from './Links';
 
 const Blog = () => {
 
@@ -30,7 +27,6 @@ const Blog = () => {
       </div>
       <div className='mt-5 pe-9 ps-9'>
         <h2 className='heading-2'>Blog Categories</h2>
-        <Links/>
       </div>
       
       <div className='BlogEntries mt-5'>

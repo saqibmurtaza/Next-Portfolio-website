@@ -1,8 +1,15 @@
-import React from "react"
 
-export const experienceData = [
+export interface resumeDataType {
+    id : number;
+    company : string;
+    duration : string;
+    details : string | string[]
+}
+
+export const experienceData: resumeDataType[] = [
     
     {
+        id : 1,
         company : 'Murtaza Sons Stationers | Business Owner, Peshawar',
         duration: 'Jan 2017 - Dec 2022',
         details : [
@@ -13,10 +20,11 @@ export const experienceData = [
             'Developed and maintained relationships with suppliers, optimized stock levels, \
             and introduced new product lines to meet evolving customer demands.',
             "Demonstrated strong leadership and decision-making skills while navigating challenges \
-            and ensuring the business's sustained growth."
+            and ensuring the business&apos;s sustained growth."
         ]
     },
     {    
+        id : 2,
         company : 'Hitech Network Private Limited | Coordinator Peshawar',
         duration: 'Jul 2011 - Dec 2016',
         details : [
@@ -27,6 +35,7 @@ export const experienceData = [
         ]
     },
     {
+        id : 3,
         company : 'Nokia Siemens Network (NSN) | Coordinator & Data Analyst Islamabad',
         duration: 'Apr 2010 - Jun 2011',
         details : [
@@ -36,6 +45,7 @@ export const experienceData = [
         ]
     },
     {
+        id : 4,
         company : 'Electronic Network Services (ENS) | Manager Administration, Islamabad',
         duration: 'Dec 2006 - Mar 2010',
         details : [
@@ -46,6 +56,7 @@ export const experienceData = [
         ]
     },  
     {
+        id : 5,
         company : 'Network Leasing Corporation Pvt Ltd. | Branch Manager, Peshawar',
         duration: 'Jun 1996 -  Sep 2006',
         details : [
@@ -57,13 +68,15 @@ export const experienceData = [
     },
   
     ]
-    export const additionalSkill = [
+    export const additionalSkills: resumeDataType[] = [
         {
+            id : 6,
             company : 'Mathematics Tutor (Part-time)',
             duration : 'Since 2013 to present',
             details : 'Utilized teaching skills to educate and mentor students in mathematics for the past 10 years.'
         },
         {
+            id : 7,
             company : 'E-commerce and Social Media Management',
             duration : 'Jun 2020 to present',
             details: [
@@ -76,10 +89,11 @@ export const experienceData = [
             ]
         },
         {
+            id : 8,
             company: "Digital Marketing and E-commerce Manager of Furniture Factory",
             duration: 'Jan 2020 to present',
             details: [
-                "Managed social media accounts for the furniture business J's Furniture on Instagram,\
+                "Managed social media accounts for the furniture business J&apos;s Furniture on Instagram,\
                 TikTok, and Facebook, consistently engaging with the audience and building \
                 brand awareness.",
                 'Implemented effective digital marketing techniques to promote products, \

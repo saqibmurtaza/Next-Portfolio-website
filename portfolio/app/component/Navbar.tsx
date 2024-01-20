@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 const Navbar = () => {
   return (
-    <section className='bg-teal-950 fixed top-0 items-center w-full md:w-full md:ps-10 pe-10 pt-2 pb-2 text-teal-100'>
+    <main className='bg-teal-950 fixed top-0 items-center w-full md:w-full md:ps-10 pe-10 pt-2 pb-2 text-teal-100'>
       <nav className="border-teal-200 flex flex-col md:flex-row items-center  ">
        
         <div className=' flex-1 text-center md:text-left'>
@@ -14,13 +14,13 @@ const Navbar = () => {
             <ul className="flex font-semibold space-x-3">
                 <Link href={'/'}>Home</Link>
                 <Link href={'/myblog'}>Blog</Link>
-                <Link href={'/resume'}>Resume</Link>
+                <Link href={'/myresumepage'}>Resume</Link>
                 <Link href={'/portfolio'}>Portfolio</Link>
             </ul>
         </div>
       </nav>
     
-    </section>
+    </main>
   );
 }
 
