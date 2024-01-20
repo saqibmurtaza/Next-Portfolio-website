@@ -1,4 +1,6 @@
 import React from "react";
+import Image from "next/image";
+import { FaEllipsis } from "react-icons/fa6";
 
 const WelcomePage = () => {
     return(
@@ -7,18 +9,14 @@ const WelcomePage = () => {
         <div className="grid grid-cols-1 gap-20 md:grid-cols-2 md:min-h-screen 
                         p-10 w-full h-full place-items-center">
             
-            <div className="">
-                <img
-                className="rounded-full"
-                style={{
-                    width: '350px',
-                    height: '350px',
-                    objectFit: 'cover',
-                    clipPath: 'ellipse(50% 80% at 50% 50%)',
-                  }} 
-                src="/images/saqib-pic.jpg" alt="pic" />
+            <div className="rounded-full overflow-hidden">
+                <Image
+                    src="/images/saqib-pic.jpg"
+                    alt="my Pic"
+                    width={350}
+                    height={350}
+                />
             </div>
-            
             <div>
                 <div>
                     <h1 className="text-3xl font-semibold md:text-3xl mb-1">Saqib Murtaza</h1>

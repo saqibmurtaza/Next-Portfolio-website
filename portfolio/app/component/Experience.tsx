@@ -6,7 +6,7 @@ const Experience = () => {
       <div className='pe-16 ps-9 pt-5'>
         <h1 className='h1'>Experience</h1>
           <p className='mb-2'>
-          With 15 years of multifaceted experience spanning diverse sectors, I've honed 
+          With 15 years of multifaceted experience spanning diverse sectors, I&apos;ve honed 
           robust management and administration skills.
           </p>
           <p>

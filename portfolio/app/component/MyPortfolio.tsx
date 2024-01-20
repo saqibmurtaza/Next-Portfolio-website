@@ -10,7 +10,7 @@ const MyPortfolio = () => {
         <div>
           <h1 className='block'>Professional Journey Overview:</h1>
           <p className='para'>
-              With a rich background spanning 15 years across diverse sectors, I've amassed 
+              With a rich background spanning 15 years across diverse sectors, I&apos;ve amassed 
               valuable experience in management and administration. 
           </p>
           <p className='para'>
@@ -32,7 +32,7 @@ const MyPortfolio = () => {
         <div>
         <h1 className='block'>Academic Progress</h1>
           <p className='para'>
-            As of the second quarter of my academic journey, I've covered foundational concepts 
+            As of the second quarter of my academic journey, I&apos;ve covered foundational concepts 
             and practical applications of Typesrept & Next.js version 14.
           </p>
         <div>
@@ -67,12 +67,12 @@ const MyPortfolio = () => {
           <h1 className='block'>Skills Acquired:</h1>
           <li className='font-bold '>Coding Proficiency:</li>
             <p className='para ps-5'>
-              During my academic journey, I've developed a Coding Proficiency & fluent in languages such
+              During my academic journey, I&apos;ve developed a Coding Proficiency & fluent in languages such
               as Javascript & Typescript
             </p>
           <li className='font-bold '>Web development skills</li>
             <p className='para ps-5'>
-              I've delved into Next.js, a powerful React framework. I've acquired a solid 
+              I&apos;ve delved into Next.js, a powerful React framework. I&apos;ve acquired a solid 
               understanding of its capabilities, including server-side rendering and efficient routing. 
             </p>
             <p className='para ps-5'>

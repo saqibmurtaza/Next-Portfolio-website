@@ -6,26 +6,29 @@
 
   .block{
     @apply
-
-    font-bold
+    
+    bg-teal-50
+    duration-300
+    hover:shadow-md hover:text-teal-700 hover:scale-105 
     max-w-fit
     mb-5
-    p-1
+    p-1 px-4 py-2 my-2  
     rounded-md
+    text-teal-950 
+    transition                
+    transform            
     shadow-sm
-    shadow-teal-950
-    text-lg
   }
 
   .buttons{
     @apply
 
     bg-teal-950
+    duration-300
     flex justify-center
     font-semibold
     md:hover:scale-105
     transition
-    duration-300
     m-2 
     p-3
     rounded-md 
@@ -33,7 +36,6 @@
     shadow-md
     text-teal-400
     text-sm
-
   }
 
   .heading-1{
@@ -47,13 +49,10 @@
   
   .heading-2 {
     @apply
-    duration-300 
     mt-5 my-2 mx-10
     ps-9 pe-16  py-2 
     rounded-md
-    shadow-md
-    transition transform 
-    text-center text-xl text-teal-600 font-extrabold;
+    text-xl text-teal-600 font-extrabold;
   }
 
   .para{

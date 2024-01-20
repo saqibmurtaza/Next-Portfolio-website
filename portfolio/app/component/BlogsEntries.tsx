@@ -15,9 +15,7 @@ const BlogsEntries : React.FC<BlogsEntriesProps> = ({object}) => {
             object.map((iterate) =>
             <div key={iterate.id}>
               <div className='ps-9 pe-16 mb-5 mt-5'>
-                <div className='block-1 px-4 py-2 my-2 bg-teal-50 text-teal-950 
-                rounded-md transition duration-300 transform hover:scale-105 
-                hover:shadow-md hover:text-teal-700'>
+                <div className='block'>
                   <Link
                     href={`${iterate.link}`}
                     target='{_blank}'

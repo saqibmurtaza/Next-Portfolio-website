@@ -25,8 +25,8 @@ const Blog = () => {
           content.
         </p>
       </div>
-      <div className='mt-5 pe-9 ps-9'>
-        <h2 className='heading-2'>Blog Categories</h2>
+      <div className='font-bold mt-5 ps-9 text-center text-2xl text-teal-600  '>
+        <h2 className=''>Blog Categories</h2>
       </div>
       
       <div className='BlogEntries mt-5'>
