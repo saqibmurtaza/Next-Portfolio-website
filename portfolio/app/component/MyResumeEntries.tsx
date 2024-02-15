@@ -9,11 +9,12 @@ const MyResumeEntries = ({data} : myResumeProp) => {
     <main>
        {
         data.map((iterate) => 
-        <div key={iterate.id} className=' grid grid-cols-2 gap-4 p-5'>
+        <div key={iterate.id} className='grid grid-cols-2'>
             
-            <div className='mt-2'>{iterate.duration}</div>
+            <h4>{iterate.duration}</h4>
             <div>
-                <h1 className='font-bold mb-2'>{iterate.company}</h1>
+                <h4>{iterate.company}</h4>
+            
                 {
                     Array.isArray(iterate.details) ? 
                     iterate.details.map((d, index) => (

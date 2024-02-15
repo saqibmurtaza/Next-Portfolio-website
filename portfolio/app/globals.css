@@ -3,68 +3,30 @@
 @tailwind utilities;
 
 @layer base {
-
-  .block{
-    @apply
-    
-    bg-teal-50
-    duration-300
-    hover:shadow-md hover:text-teal-700 hover:scale-105 
-    max-w-fit
-    mb-5
-    p-1 px-4 py-2 my-2  
-    rounded-md
-    text-teal-950 
-    transition                
-    transform            
-    shadow-sm
-  }
-
+  
   .buttons{
     @apply
-
+    
     bg-teal-950
     duration-300
-    flex justify-center
     font-semibold
     md:hover:scale-105
     transition
-    m-2 
     p-3
     rounded-md 
-    shadow-gray-400 
-    shadow-md
     text-teal-400
     text-sm
   }
 
-  .heading-1{
+  .card{
     @apply
-    border-b border-teal-200 
-    font-bold
-    h-16 pt-3 ps-9
-    shadow-md
-    text-3xl 
-  }
-  
-  .heading-2 {
-    @apply
-    mt-5 my-2 mx-10
-    ps-9 pe-16  py-2 
-    rounded-md
-    text-xl text-teal-600 font-extrabold;
+    prose border p-5
   }
 
-  .para{
+  .portfolio{
     @apply
-    pb-5 pe-9
+    prose 
+    bg-white border ps-9 pe-9 shadow-lg
   }
-  
 
-  .subheadings{
-    @apply
-    font-bold
-    mb-2
-    text-2xl
-  }
 }

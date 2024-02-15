@@ -1,18 +1,22 @@
 'use client'
 
 import React from 'react'
-import { career, emailMarketing, freelancing, health, interior, 
+import { career, career2, emailMarketing, emailMarketing2, emailMarketing3, freelancing, freelancing2, health, interior, 
+          interior2, 
+          interior3, 
           online, socialMedia, technology } from '../lib/BlogData';
 import BlogsEntries from './BlogsEntries';
+import BlogLinks from './BlogLinks';
+
 
 const Blog = () => {
 
   return (
       
-    <main className='bg-teal-50 font-medium text-teal-950 '>
+    <main className='grid gap-1 place-items-center mb-2'>
       
-      <div className='pe-9 ps-9 pt-5'>
-        <p className='mb-2'>Explore a diverse range of insightful articles in my Blog section, 
+      <div className='prose border pe-9 ps-9 pt-5 pb-5 shadow-lg'>
+        <p className=''>Explore a diverse range of insightful articles in my Blog section, 
           where I share perspectives on career development, health and fitness, writing, 
           technology, and more. 
         </p>
@@ -25,70 +29,67 @@ const Blog = () => {
           content.
         </p>
       </div>
-      <div className='font-bold mt-5 ps-9 text-center text-2xl text-teal-600  '>
-        <h2 className=''>Blog Categories</h2>
+      
+      {/*BLOG CATEGORIES */}
+    
+      <div className=''>
+        <BlogLinks/>
       </div>
       
-      <div className='BlogEntries mt-5'>
-        <div id='career' className='heading-2'>
-          Career & Job Seeking
-        </div>
-        <div>
-          <BlogsEntries object={career}/>{/*component BlogEntries -passing prop with value 0bject=career*/}
+      <div className='prose border grid grid-cols-1 md:grid-cols-2 gap-2 p-2 shadow-lg'>
+        
+        <div id='career'>
+          <BlogsEntries object={career}/>
         </div>
         
-        <div>
-        <div id='health&' className='heading-2'>
-          Health and Fitness
+        <div id='career' >
+          <BlogsEntries object={career2}/>
         </div>
-           <BlogsEntries object={health}/>
-          </div>
+        
+        <div id='health&' >
+          <BlogsEntries object={health}/>
         </div>
-     
-          <div id='social' className='heading-2'>
-            Social Media and Online Presence
-          </div>
-          <div>
-            <BlogsEntries object={socialMedia}/>
-          </div>
+              
+        <div id='social' >
+          <BlogsEntries object={socialMedia}/>
+        </div>
 
-          <div id='technology' className='heading-2'>
-            Technology and Web Hosting
-          </div>
-          <div>
-            <BlogsEntries object={technology}/>
-          </div>
-        
-          <div id='home' className='heading-2'>
-            Home and Interior Design
-          </div>
-          <div>
-            <BlogsEntries object={interior}/>
-          </div>
-      
-          <div id='business' className='heading-2'>
-            Business and Online Income
-          </div>
-          <div>
-            <BlogsEntries object={online}/>
-          </div>
-      
-          <div id='marketing' className='heading-2'>
-            Digital Marketing and Email
-          </div>
-          <div>
-            <BlogsEntries object={emailMarketing}/>
-          </div>
-      
-          <div id='freelancing' className='heading-2'>
-            Freelancing and Working from Home
-          </div>
-          <div>
-            <div>
-            <BlogsEntries object={freelancing}/>
-          </div>
-        
+        <div  id='technology' >
+          <BlogsEntries object={technology}/>
         </div>
+
+        <div id='home' >
+          <BlogsEntries object={interior}/>
+        </div>
+        <div id='home' >
+          <BlogsEntries object={interior2}/>
+        </div>
+        <div id='home'>
+          <BlogsEntries object={interior3}/>
+        </div>
+
+        <div id='business' >
+          <BlogsEntries object={online}/>
+        </div>
+
+        <div id='marketing' >
+          <BlogsEntries object={emailMarketing}/>
+        </div>
+        <div id='marketing'>
+          <BlogsEntries object={emailMarketing2}/>
+        </div>
+        <div id='marketing' >
+          <BlogsEntries object={emailMarketing3}/>
+        </div>
+
+        <div id='freelancing' >
+          <BlogsEntries object={freelancing}/>
+        </div>
+        <div id='freelancing' >
+          <BlogsEntries object={freelancing2}/>
+        </div>
+
+      </div>
     </main>
   )
 }

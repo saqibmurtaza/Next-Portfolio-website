@@ -1,30 +1,25 @@
 import React from "react";
 import Image from "next/image";
-import { FaEllipsis } from "react-icons/fa6";
+
 
 const WelcomePage = () => {
     return(
-        <main>
-        
-        <div className="grid grid-cols-1 gap-20 md:grid-cols-2 md:min-h-screen 
-                        p-10 w-full h-full place-items-center">
+        <main className="grid place-items-center">
             
-            <div className="rounded-full overflow-hidden">
-                <Image
-                    src="/images/saqib-pic.jpg"
-                    alt="my Pic"
-                    width={350}
-                    height={350}
-                />
-            </div>
-            <div>
+            <div className="prose grid grid-cols-1 p-5 md:grid-cols-2 gap-8 items-center">
                 <div>
-                    <h1 className="text-3xl font-semibold md:text-3xl mb-1">Saqib Murtaza</h1>
-                    <p className="mt-1 mb-2 font-semibold text-teal-400 text-lg md:text-lg">A Bit About Me</p>
+                    <Image
+                        src="/images/saqib-pic.jpg"
+                        alt="my Pic"
+                        width={1000}
+                        height={1000}
+                        className="rounded-full h-[38rem] md:w-[18rem] md:h-[18rem]"
+                    />
                 </div>
-                
-                <div className="md:text-[18px]">
-                    <p className="mb-5">
+                <div>
+                    <h1 className="">Saqib Murtaza</h1>
+                    <h3 className="font-bold text-teal-400">A Bit About Me</h3>
+                    <p className="">
                         A multifaceted professional, I have successfully managed diverse teams, 
                         enhancing operational efficiency across various industries, with a background 
                         in administration and management.</p> 
@@ -32,15 +27,15 @@ const WelcomePage = () => {
                         I am further honing my skill set with a dedicated focus on web development 
                         and emerging technologies in the web3 and metaverse domains.
                     </p>     
-                    <p className="mb-5"> 
+                    <p className=""> 
                         I am seeking opportunities to contribute to projects that require a 
                         unique blend of my expertise in diverse fields .
                     </p>
-                
                 </div>
                 
+                
             </div>
-      </div>
+      
 
         </main>
     );

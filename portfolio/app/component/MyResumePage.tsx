@@ -10,37 +10,39 @@ import { educationData } from '../lib/EducationData';
 const MyResumePage = () => {
      
     return (
-    <main className='bg-teal-50 font-medium min-h-screen text-teal-950'>
+    <main className='grid place-items-center '>
+        <div className='prose bg-white border mb-3 p-5 shadow-lg'>
+        
+            <h2>Education</h2>
+            
+            <div>
+                <MyResumeEntries data={educationData}/>
+            </div>
+            
+            <h2>Experience</h2>
 
-        <div className=''>
-            <h1 className='heading-1'>Resume</h1>
-        </div>
-        
-            <h1 className='text-2xl ps-9 pt-5'>Education</h1>
-        
-        <div className='border-b border-teal-200 mx-5'>
-            <MyResumeEntries data={educationData}/>
-        </div>
-            <h1 className='text-2xl ps-9 pt-5'>Experience</h1>
+            <div>
+                <MyResumeEntries data={experienceData}/>
+            </div>
 
-        <div className='border-b border-teal-200 mx-5'>
-            <MyResumeEntries data={experienceData}/>
+            <h2>Additional Skills</h2>
+            
+            <div>
+                <MyResumeEntries data={additionalSkills}/>
+                <div className='grid place-content-center md:place-content-end'>
+                    <Link
+                        href="/documents/resume.pdf"
+                        target='{}'
+                        rel='noopener noreferrer'>
+                        <h1 className=' bg-teal-950 font-bold p-2 rounded-md 
+                            shadow-md shadow-gray-400 text-teal-400 text-xs
+                            hover:scale-105 transition duration-300'>Download Resume</h1>
+                    </Link>
+                </div>  
+            </div>
         </div>
-            <h1 className='text-2xl ps-9 pt-5'>Additional Skills</h1>
+
         
-        <div className='border-b border-teal-200 mx-5'>
-            <MyResumeEntries data={additionalSkills}/>
-            <div className='grid place-content-center md:place-content-end'>
-                <Link
-                    href="/documents/resume.pdf"
-                    target='{}'
-                    rel='noopener noreferrer'>
-                    <h1 className=' bg-teal-950 font-bold max-w-fit mt-3 mb-3 p-2 rounded-md 
-                        shadow-md shadow-gray-400 text-teal-400 text-xs
-                        hover:scale-105 transition duration-300'>Download Resume</h1>
-                </Link>
-            </div>  
-        </div>
     </main>
   )
 }

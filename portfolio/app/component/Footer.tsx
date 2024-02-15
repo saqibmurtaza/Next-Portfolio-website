@@ -4,19 +4,20 @@ import Link from 'next/link';
 
 const Footer = () => {
   return (
-    <footer className="bg-teal-950 ps-10 pt-2 pb-2 text-teal-400">
-      <div className='grid grid-cols-3 items-center'>
+    <footer className="bg-teal-950 text-teal-400">
+      <div className='flex flex-wrap items-center justify-around max-w-2xl mx-auto relative'>
         
-        <div className='grid place-items-start'>
+        <div className='text-xs md:text-sm'>
           <p>+92 317 193 8567</p>
           <p>+92 309 945 7645</p>
         </div>
         
-        <div className='flex'>
+        <div>
           <h1>saqibmurtazakhan@gmail.co</h1>
         </div>
-        <div className='grid place-items-center'>
-          <div>
+
+        <div>
+          <div className='text-sm md:text-base'>
             <Link 
               href={'https://www.linkedin.com/in/saqibmurtazakhan/'}
               target='{}'
